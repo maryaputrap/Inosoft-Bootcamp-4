@@ -1,0 +1,57 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+}
+
+button {
+    height: 60px;
+    font-size: 2rem !important;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.userInput {
+    position: relative;
+    height: 80px;
+    max-width: 100%;
+    text-align: right;
+    padding: 10px;
+    font-size: 25px;
+    background-color: #252525;
+    color: #fff;
+}
+
+.userEntry {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 5px;
+    right: 0;
+}
+
+.finalCalc {
+    position: absolute;
+    right: 0;
+    margin: 5px;
+    top: 0;
+    padding: 0;
+}
